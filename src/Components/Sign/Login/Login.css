@@ -1,0 +1,112 @@
+/* Ajuste general */
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Panel izquierdo con la imagen y el logo */
+.login-left {
+  flex: 1.2; /* Incrementa el tamaño de la imagen */
+  background-color: #041720;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFC107;
+  position: relative;
+}
+
+.login-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.login-logo {
+  position: relative;
+  z-index: 1;
+  font-size: 45px; /* Tamaño más grande para el logo */
+  color: #705200;
+  margin-top: 32rem;
+}
+
+/* Panel derecho con el formulario */
+.login-right {
+  flex: 0.8; /* Reduce un poco el tamaño del formulario */
+  background-color: #041720;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  color: white;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px; /* Aumenta el ancho máximo del formulario */
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form h2 {
+  color: #90C600;
+  font-size: 28px; /* Tamaño más grande para el título */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #90C600;
+  margin-bottom: 20px;
+  padding: 10px 0; /* Aumenta el padding para un campo más grande */
+  color: #FFFFFF;
+  font-size: 16px;
+  outline: none;
+}
+
+.login-btn {
+  background-color: #90C600;
+  color: #041720;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #7BA500;
+}
+
+.error-message {
+  color: #FF4D4D;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.register-link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.register-link:hover {
+  color: #90C600;
+  text-decoration: underline;
+}

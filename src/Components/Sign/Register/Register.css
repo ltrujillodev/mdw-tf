@@ -1,0 +1,103 @@
+/* Contenedor principal de registro */
+.register-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Panel izquierdo con la imagen */
+.register-left {
+  flex: 1.2;
+  background-color: #041720;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.register-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.register-logo {
+  position: relative;
+  z-index: 1;
+  font-size: 32px;
+  color: #FFC107;
+}
+
+/* Panel derecho con el formulario */
+.register-right {
+  flex: 0.8;
+  background-color: #041720;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  color: white;
+}
+
+.register-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form h2 {
+  color: #90C600;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #90C600;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  color: #FFFFFF;
+  font-size: 16px;
+  outline: none;
+}
+
+.register-form button[type="submit"] {
+  background-color: #90C600;
+  color: #041720;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.register-form button[type="submit"]:hover {
+  background-color: #7BA500;
+}
+
+.register-form button[type="button"] {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #FFFFFF;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.register-form button[type="button"]:hover {
+  color: #90C600;
+  text-decoration: underline;
+}
